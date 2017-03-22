@@ -16,31 +16,53 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="打开" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2"/>
 
     <Button
         android:id="@+id/btn_auto_open"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="设置自动打开" />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="打开空白页面并返回到手机桌面"
+        android:textColor="@color/colorPrimary" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2"/>
     <Button
         android:id="@+id/btn_set_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="设置是否覆盖状态栏" />
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2"/>
     <Button
         android:id="@+id/btn_dismiss_policy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="设置消失规则" />
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2"/>
     <Button
         android:id="@+id/btn_set_clickNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="设置点击屏幕次数" />
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2"/>
     <Button
         android:id="@+id/btn_show_floatball"
         android:layout_width="wrap_content"
@@ -51,8 +73,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="添加一个悬浮球到桌面上来快速创建空白界面"
+        android:text="添加一个悬浮球到桌面上快速创建空白界面"
         android:textColor="@color/colorPrimary" />
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="介绍：在手机上创建一个透明界面，主要作用就是防止小屁孩玩自己的手机"
+        android:textColor="@color/colorPrimary" />
 
 </LinearLayout>
