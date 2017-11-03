@@ -1,89 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/linear_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="pub.war3.lockmyphone.MainActivity">
 
     <Button
-        android:id="@+id/btn_open"
+        android:id="@+id/btn_open_single"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="打开" />
+        android:text="进入单机版" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#e2e2e2"/>
+        android:background="#e2e2e2" />
 
     <Button
-        android:id="@+id/btn_auto_open"
+        android:id="@+id/btn_open_controller"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="设置自动打开" />
+        android:text="进入控制端" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2" />
+
+    <Button
+        android:id="@+id/btn_produce_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生成Key和密码" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:hint="key" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:hint="密码" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="复制Key和密码" />
+
+            <Button
+                android:id="@+id/btn_generate_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生成二维码" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2" />
+
+    <Button
+        android:id="@+id/btn_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="打开空白页面并返回到手机桌面"
-        android:textColor="@color/colorPrimary" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#e2e2e2"/>
-    <Button
-        android:id="@+id/btn_set_status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="设置是否覆盖状态栏" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#e2e2e2"/>
-    <Button
-        android:id="@+id/btn_dismiss_policy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="设置消失规则" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#e2e2e2"/>
-    <Button
-        android:id="@+id/btn_set_clickNum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="设置点击屏幕次数" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#e2e2e2"/>
-    <Button
-        android:id="@+id/btn_show_floatball"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="添加桌面快捷小球" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="添加一个悬浮球到桌面上快速创建空白界面"
-        android:textColor="@color/colorPrimary" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#e2e2e2"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="介绍：在手机上创建一个透明界面，主要作用就是防止小屁孩玩自己的手机"
-        android:textColor="@color/colorPrimary" />
-
+        android:layout_marginLeft="16dp"
+        android:text="点击设置按钮，隐藏此界面，重启app恢复"
+        android:textColor="@color/black" />
 </LinearLayout>

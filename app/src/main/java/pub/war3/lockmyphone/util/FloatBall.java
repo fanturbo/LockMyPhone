@@ -1,4 +1,4 @@
-package pub.war3.lockmyphone;
+package pub.war3.lockmyphone.util;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -7,6 +7,8 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
+
+import pub.war3.lockmyphone.R;
 
 /**
  * 悬浮球

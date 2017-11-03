@@ -1,4 +1,4 @@
-package pub.war3.lockmyphone;
+package pub.war3.lockmyphone.util;
 
 import android.app.Activity;
 import android.content.Context;

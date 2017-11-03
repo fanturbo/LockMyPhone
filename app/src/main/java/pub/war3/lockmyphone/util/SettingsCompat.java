@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package pub.war3.lockmyphone;
+package pub.war3.lockmyphone.util;
 
 import android.Manifest;
 import android.app.AppOpsManager;
@@ -194,7 +194,7 @@ public class SettingsCompat {
         if (startSafely(context, intent)) {
             return true;
         }
-        intent.setClassName(HUAWEI_PACKAGE, "com.huawei.permissionmanager.ui.MainActivity");
+        intent.setClassName(HUAWEI_PACKAGE, "com.huawei.permissionmanager.ui.ControllerActivity");
         if (startSafely(context, intent)) {
             return true;
         }
@@ -266,7 +266,7 @@ public class SettingsCompat {
             intent.putExtra("permission", new String[]{Manifest.permission.SYSTEM_ALERT_WINDOW});
 
             //        Intent intent = new Intent("com.smartisanos.security.action.MAIN");
-            //        intent.setClassName("com.smartisanos.security", "com.smartisanos.security.MainActivity");
+            //        intent.setClassName("com.smartisanos.security", "com.smartisanos.security.ControllerActivity");
             return startSafely(context, intent);
         }
     }

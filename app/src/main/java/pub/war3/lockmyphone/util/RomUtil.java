@@ -1,4 +1,4 @@
-package pub.war3.lockmyphone;
+package pub.war3.lockmyphone.util;
 
 import android.os.Build;
 import android.text.TextUtils;
